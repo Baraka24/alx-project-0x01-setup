@@ -1,5 +1,6 @@
 import React from "react";
 import { UserProps } from "@/interfaces";
+// <UserProps>
 
 export type UserCardProps = UserProps & {
   onMessage?: (user: UserProps) => void;
