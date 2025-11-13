@@ -10,4 +10,10 @@ export interface UserProps {
   name: string;
   username: string;
   email: string;
+  address?: {
+    street: string;
+  };
+  company?: {
+    catchPhrase: string;
+  };
 }

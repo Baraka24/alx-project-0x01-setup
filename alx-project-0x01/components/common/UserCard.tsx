@@ -26,7 +26,7 @@ function initials(name: string) {
   return parts.map((p) => p.charAt(0).toUpperCase()).join("");
 }
 
-const UserCard: React.FC<UserCardProps> = ({
+const UserCard: React.FC<UserProps & { onMessage?: (user: UserProps) => void; onFollow?: (user: UserProps) => void; compact?: boolean; className?: string }> = ({
   id,
   name,
   username,
